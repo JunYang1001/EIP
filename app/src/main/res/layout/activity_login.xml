@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash"
+    >
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:id="@+id/login_iv"
+        android:src="@mipmap/eipiocnlogo"
+        android:layout_marginTop="80dp"
+        android:scaleType="fitXY"
+        android:layout_centerHorizontal="true"
+        />
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:padding="5dp"
+        android:hint="@string/loginac"
+        android:background="@drawable/login_userinfo"
+        android:inputType="text"
+        android:layout_below="@+id/login_iv"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/login_ac"
+
+        />
+
+    <EditText
+        android:id="@+id/login_pass"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:padding="5dp"
+        android:hint="@string/loginpass"
+        android:background="@drawable/login_userinfo"
+        android:inputType="textPassword"
+        android:layout_below="@+id/login_ac"
+        android:layout_centerHorizontal="true"
+        android:singleLine="true"
+        android:imeOptions="actionDone"/>
+
+    <Button
+        android:id="@+id/login_btn"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_pass"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/loginbtn"
+        android:background="@drawable/loginbtn_shape"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:id="@+id/forgetpwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/login_btn"
+        android:text="忘记密码"
+        android:textSize="15dp" />
+
+    <Button
+        android:id="@+id/login_reg"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/login_btn"
+        android:layout_below="@+id/login_btn"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/loginbtn_shape"
+        android:text="注册"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+</RelativeLayout>

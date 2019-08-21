@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true"
+    android:scrollbars="vertical"
+    android:fadingEdge="vertical">
+<LinearLayout
+    xmlns:app="https://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <com.jude.rollviewpager.RollPagerView
+        android:id="@+id/roll_view_pager"
+        android:layout_width="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_height="150dp"
+        app:rollviewpager_play_delay="3000"/>
+    <TextView
+        android:id="@+id/citymap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="城市："
+        android:textColor="#000000"
+        android:textSize="16dp"
+        android:background="#7FFFD4"/>
+    <GridView
+        android:id="@+id/fc_gv"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_marginBottom="00dp"
+        android:columnWidth="60dp"
+        android:gravity="center"
+        android:horizontalSpacing="0dp"
+        android:numColumns="3"
+        android:paddingBottom="10dp"
+        android:stretchMode="spacingWidthUniform"
+        android:verticalSpacing="10dp" />
+
+    <TextView
+       android:id="@+id/per_rec"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="个性推荐"
+        android:textColor="#000000"
+        android:textSize="16dp"
+        android:background="#7FFFD4"/>
+
+    <com.zjy1001.androiddemotest.MyListView
+        android:id="@+id/tj_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
+
+
+</ScrollView>

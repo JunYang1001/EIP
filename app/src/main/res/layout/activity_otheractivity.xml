@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.zjy1001.androiddemotest.otheractivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/main_toolbarss"
+        android:layout_height="80dp"
+        android:layout_width="match_parent"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@drawable/ono"
+
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:paddingTop="20dp"
+        >
+        <TextView
+            android:id="@+id/toolbar_titless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:text=""/>
+    </android.support.v7.widget.Toolbar>
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/logologin" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/dialog"
+            android:layout_width="325dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/me_button"
+            android:text="app版本" />
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/me_button"
+            android:src="@mipmap/me_tb"
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/xiugaipwd"
+            android:layout_width="325dp"
+            android:layout_height="wrap_content"
+
+            android:background="@drawable/me_button"
+            android:text="修改密码" />
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+
+            android:background="@drawable/me_button"
+            android:src="@mipmap/me_tb"
+
+            />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,48 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <!-- 我们使用了toolbar就必须修改样式文件，将原来的标题栏去掉 -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="actionOverflowMenuStyle">@style/MenuStyle</item>
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+    <style name="MenuStyle" parent="@style/Widget.AppCompat.Light.PopupMenu.Overflow">
+        <!-- 是否覆盖锚点，默认为true，即盖住Toolbar -->
+        <item name="overlapAnchor">false</item>
+        <!-- 弹出层背景颜色 -->
+        <item name="android:popupBackground">#2496ec</item>
+        <!-- 弹出层垂直方向上的偏移，即在竖直方向上距离Toolbar的距离，值为负则会盖住Toolbar -->
+        <item name="android:dropDownVerticalOffset">5dp</item>
+        <!-- 弹出层水平方向上的偏移，即距离屏幕左边的距离，负值会导致右边出现空隙 -->
+        <item name="android:dropDownHorizontalOffset">0dp</item>
+    </style>
+
+    <!-- 设置主页面底部按钮外的相对布局. -->
+    <style name="button_re_style">
+        <item name="android:layout_height">60dp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:padding">5dp</item>
+    </style>
+
+    <!-- 设置主页面底部按钮样式 -->
+    <style name="ib_style">
+        <item name="android:layout_height">60dp</item>
+        <item name="android:layout_width">55dp</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+
+    <!-- 个人中心的横线 -->
+    <style name="personal_center_line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/height_line_half_of_one</item>
+        <item name="android:layout_marginTop">@dimen/margin_15</item>
+        <item name="android:background">@color/light_gray</item>
+    </style>
+
+</resources>

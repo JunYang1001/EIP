@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="false"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+
+    android:orientation="vertical">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/main_toolbarss"
+        android:layout_height="80dp"
+        android:layout_width="match_parent"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@drawable/ono"
+
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:paddingTop="20dp"
+        >
+        <TextView
+            android:id="@+id/toolbar_titless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:text=""/>
+    </android.support.v7.widget.Toolbar>
+    <ImageView
+        android:id="@+id/reg_image"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/logologin"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="18dp"
+        android:textColor="#262626"
+        android:text="修改密码" />
+    <EditText
+        android:id="@+id/olduserpwd"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:hint="请输入旧密码"
+        android:inputType="textPassword"
+        android:background="@drawable/login_userinfo"
+        android:layout_gravity="center"
+        />
+    <EditText
+        android:id="@+id/userpassword"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:hint="请输入新密码"
+        android:inputType="textPassword"
+        android:background="@drawable/login_userinfo"
+        android:layout_gravity="center"
+        />
+    <EditText
+        android:id="@+id/userpassword2"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:hint="请再次输入新密码"
+        android:inputType="textPassword"
+        android:background="@drawable/login_userinfo"
+        android:layout_gravity="center"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/confbtn"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+           android:layout_marginTop="30dp"
+            android:layout_marginLeft="120dp"
+            android:background="@drawable/loginbtn_shape"
+            android:text="确认修改"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

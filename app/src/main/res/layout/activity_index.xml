@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/main_toolbar"
+        android:layout_height="80dp"
+        android:layout_width="match_parent"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@drawable/ono"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:paddingTop="20dp"
+        >
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+
+
+    </android.support.v7.widget.Toolbar>
+
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/main_v"
+        android:layout_below="@+id/main_toolbar"
+        android:layout_weight="1">
+
+    </android.support.v4.view.ViewPager>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:id="@+id/main_ll"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+        <RelativeLayout
+            style="@style/button_re_style"
+            >
+            <ImageButton
+                android:id="@+id/main_ib1"
+                style="@style/ib_style"
+                android:background="@drawable/bar_home"
+                android:layout_height="30dp"
+                android:layout_width="30dp"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            style="@style/button_re_style"
+            >
+            <ImageButton
+                android:id="@+id/main_ib2"
+                style="@style/ib_style"
+                android:background="@drawable/bar_sort"
+                android:layout_height="30dp"
+                android:layout_width="30dp"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            style="@style/button_re_style"
+            >
+
+            <ImageButton
+                android:id="@+id/main_ib5"
+                style="@style/ib_style"
+                android:background="@drawable/bar_release"
+                android:layout_height="30dp"
+                android:layout_width="30dp"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            style="@style/button_re_style"
+            >
+            <ImageButton
+                android:id="@+id/main_ib3"
+                style="@style/ib_style"
+                android:background="@drawable/bar_find"
+                android:layout_height="30dp"
+                android:layout_width="30dp"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            style="@style/button_re_style"
+            >
+
+            <ImageButton
+                android:id="@+id/main_ib4"
+                style="@style/ib_style"
+                android:background="@drawable/bar_me"
+                android:layout_height="30dp"
+                android:layout_width="30dp"
+                />
+        </RelativeLayout>
+
+    </LinearLayout>
+    <View
+        android:id="@+id/main_v"
+        android:layout_width="wrap_content"
+        android:layout_height="0.5dp"
+        android:layout_above="@id/main_ll"
+        android:background="@color/devide_line" />
+
+</RelativeLayout>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="false"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:background="@drawable/splash"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/reg_image"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/logologin"
+        android:layout_gravity="center"/>
+    <EditText
+        android:id="@+id/userid"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:hint="@string/loginac"
+        android:inputType="text"
+        android:background="@drawable/login_userinfo"
+        android:layout_gravity="center"
+        />
+    <EditText
+        android:id="@+id/userpassword"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:hint="请输入密码"
+        android:inputType="textPassword"
+        android:background="@drawable/login_userinfo"
+        android:layout_gravity="center"
+        />
+    <EditText
+        android:id="@+id/userpassword2"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:hint="请再次输入密码"
+        android:inputType="textPassword"
+        android:background="@drawable/login_userinfo"
+        android:layout_gravity="center"
+        />
+    <EditText
+        android:id="@+id/uname"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:hint="请输入昵称"
+        android:inputType="text"
+        android:background="@drawable/login_userinfo"
+        android:layout_gravity="center"
+        />
+    <RadioGroup
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:id="@+id/sex_rg"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+        <RadioButton
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:text="男"
+            android:checked="true"
+            android:id="@+id/radio_man"/>
+        <RadioButton
+            android:id="@+id/radio_woman"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:text="女"
+            />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/userage"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/login_userinfo"
+        android:hint="请输入年龄"
+        android:inputType="number"
+        android:padding="5dp" />
+
+    <EditText
+        android:id="@+id/userphone"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/login_userinfo"
+        android:hint="请输入您的联系方式"
+        android:inputType="phone"
+        android:padding="5dp" />
+
+    <EditText
+        android:id="@+id/useremail"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:hint="请输入邮箱"
+        android:inputType="text"
+        android:background="@drawable/login_userinfo"
+        android:layout_gravity="center"
+        />
+
+    />
+    <EditText
+        android:id="@+id/usercity"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:hint="请输入您的城市"
+        android:inputType="text"
+        android:background="@drawable/login_userinfo"
+        android:layout_gravity="center"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/loginbtn_shape"
+            android:text="返回"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/regbtn"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="40dp"
+            android:background="@drawable/loginbtn_shape"
+            android:text="注册"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
